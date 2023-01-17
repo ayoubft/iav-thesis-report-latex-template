@@ -8,7 +8,7 @@ It serves as a starting point for graduate students to efficiently and effective
 Using this LaTeX template for thesis reports is straightforward. To get started, please follow these steps:
 
 - Download the template as a zip file
-- Go to [overleaf](overleaf.com)
+- Go to [overleaf](https://www.overleaf.com/)
 - Create a new project and upload the downloaded zip file
 - Once the project is uploaded, you can begin editing the template to fit your specific thesis report
 
