@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- CODE SNIPPETS --
+
+
+% Style of code snippets
+\lstdefinestyle{codeSnippet} {
+  backgroundcolor=\color{bgCodeColor},
+  commentstyle=\color{commentsColor},
+  keywordstyle=\color{kwColor},
+  numberstyle=\tiny\color{numColor},
+  stringstyle=\color{stringColor},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=codeSnippet}
+
+% -- BackGround Image --
+\newcommand\BackImage[2][scale=1]{%
+\BgThispage
+\backgroundsetup{
+  contents={\includegraphics[#1]{#2}}
+  }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\hypersetup{frenchlinks=true}  % for making ref uppercase
+
+
+
+%\addcontentsline{toc}{chapter}{Bibliographie}
+%\addcontentsline	

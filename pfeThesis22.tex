@@ -1,0 +1,73 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Author: ayoubft
+%  Liscence: mit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper,openright,oneside]{book}
+\usepackage[a4paper, right=25mm, left=30mm, top=25mm,bottom=25mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor} % for coloring tables
+\usepackage{pdfpages}   % for appendices
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{figures}} % defining the path to figures
+\usepackage{subcaption}  % for sub-figures
+\usepackage{enumitem} % to use decrease space between bullet points [noitemsep,nolistsep]
+\usepackage{fourier}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{flafter}  % to prevent floating objects from appearing before its def
+\usepackage{microtype} % font expansion & character protrusion
+\usepackage{natbib}  % references bib
+\usepackage{anyfontsize}  % for using HUUGEE font
+\usepackage[Lenny]{fncychap} % Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage{verbatim}  % code snippets
+\usepackage{varioref}  % for referencing use like ~\vref{f5}
+%\usepackage{nomencl}  % for list of symbols
+\usepackage[pages=some,scale=1,angle=0,opacity=1]{background} % for background image
+\usepackage{listings}
+\usepackage{codecolors}
+\usepackage{wallpaper}
+\usepackage{booktabs}	% for tables
+\usepackage{placeins}   % for float barrier
+\usepackage[toc]{appendix}
+\usepackage[nohints]{minitoc} % mini table of contents for chapters
+\setcounter{minitocdepth}{2} % just temporary until settling up for a good outline
+\usepackage{hyperref} % use [hidelinks] to ... also to fix nmbering in tocs [hypertexnames=false]
+\hypersetup{colorlinks=true, urlcolor= blue, linkcolor=blue, citecolor=red} % hyperlinks styling
+\usepackage{url}
+\usepackage{shorttoc}
+\usepackage{todonotes} 
+%\setlength{\marginparwidth}{4cm}  % increase width for comments
+% use this: ffmpeg -i "%%F" -q:v 10 "processed\%%F" ; to reduce images size
+\author{Ayoub Fatihi}
+\title{PFE THESIS}
+\begin{document}
+\frontmatter
+\input{styles/styles}
+\include{0-frontmatter/titlepage}   
+\include{0-frontmatter/dedication} %%
+\include{0-frontmatter/acknowledgements} %%
+\include{0-frontmatter/abstract} %%
+\include{0-frontmatter/tables}
+
+\mainmatter % intro ---> develop --> conclusions & recommendations
+\include{1-mainmatter/chapter1}
+\include{1-mainmatter/chapter2}
+\include{1-mainmatter/chapter3}
+\include{1-mainmatter/chapter4}
+\include{1-mainmatter/chapter5}
+\include{1-mainmatter/chapter6}
+\include{1-mainmatter/codeSnippet}
+% --------- Appendices
+\include{2-appendices/appendices}
+
+\backmatter
+\bibliographystyle{apalike}
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{3-backmatter/pfe22refs}
+% --------- list of acronyms
+% --------- Index
+\end{document}
