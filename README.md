@@ -2,7 +2,7 @@
 
 ### [Sample](https://github.com/ayoubft/iav-thesis-report-latex-template/blob/main/pfeThesis22.pdf)
 
-This repository contains a basic LaTeX template for thesis reports that adheres to the formatting guidelines set forth by IAV Hassan II university.
+This repository contains a basic LaTeX template for thesis reports that adheres to the formatting guidelines set forth by IAV Hassan II institue.
 It serves as a starting point for graduate students to efficiently and effectively organize and present their research in a professional manner.
 
 ## Getting started
