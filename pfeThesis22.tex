@@ -1,6 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Author: ayoubft
-%  Liscence: mit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Author: ayoubft
+%%  Liscence: mit
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt,a4paper,openright,oneside]{book}
 \usepackage[a4paper, right=25mm, left=30mm, top=25mm,bottom=25mm]{geometry}
@@ -38,6 +39,7 @@
 \hypersetup{colorlinks=true, urlcolor= blue, linkcolor=blue, citecolor=red} % hyperlinks styling
 \usepackage{url}
 \usepackage{shorttoc}
+\usepackage[nohyperlinks]{acronym}
 \usepackage{todonotes} 
 %\setlength{\marginparwidth}{4cm}  % increase width for comments
 % use this: ffmpeg -i "%%F" -q:v 10 "processed\%%F" ; to reduce images size
@@ -69,5 +71,5 @@
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{3-backmatter/pfe22refs}
 % --------- list of acronyms
-% --------- Index
+\include{3-backmatter/acronyms}
 \end{document}
